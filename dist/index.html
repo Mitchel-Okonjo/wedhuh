@@ -4,7 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <img
+        src="icons/weather-hazy.svg"
+        alt="weather icon"
+        class="header-icon"
+      />
+      <h1 class="header-title">Weather App</h1>
+    </header>
+    <div class="temp-change">
+      <button type="button">&deg;C</button>
+      <span>Celcius</span>
+    </div>
+    <div class="search">
+      <input type="text" class="search-input" placeholder="Enter a city" />
+      <input type="submit" class="search-btn" value="search" />
+    </div>
+
+    <div class="data-page">
+      <div class="weather-message">
+        <div class="text">Something about the weather will be written here</div>
+      </div>
+
+      <div class="weather-details">
+        <!-- Details about locaiton -->
+        <div class="location">
+          <div class="country">
+            <span class="key">Country:</span>
+            <span class="value">Nigeria</span>
+          </div>
+          <div class="region">
+            <span class="key">Region:</span>
+            <span class="value">Abuja</span>
+          </div>
+          <div class="time">
+            <span class="key">Tiime:</span>
+            <span class="value">15:00</span>
+          </div>
+          <div class="time-zone">
+            <span class="key">Time Zone:</span>
+            <span class="value">Africa/Lagos</span>
+          </div>
+        </div>
+        <!-- Details about current weather -->
+        <div class="current">
+          <div class="temp">
+            <span class="key">Temperature:</span>
+            <span class="value">29&deg;C</span>
+          </div>
+          <div class="feels-like">
+            <span class="key">Feels Like:</span>
+            <span class="value">32&deg;C</span>
+          </div>
+          <div class="humidity">
+            <span class="key">Humidity:</span>
+            <span class="value">69</span>
+          </div>
+          <div class="wind-dir">
+            <span class="key">Wind Direction:</span>
+            <span class="value">SSW</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
   <script src="main.js"></script>
 </html>
