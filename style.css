@@ -126,18 +126,20 @@ body > * {
   color: var(--btn-color);
   font-size: 2rem;
   font-family: var(--roboto-regular);
-  padding: 2rem 5rem;
+  padding: 2rem 5rem 12rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
 }
 
 .weather-message {
-  margin-top: 5rem;
   font-family: var(--roboto-medium);
   font-size: 2.5rem;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
 .weather-details {
@@ -168,7 +170,8 @@ body > * {
   font-family: var(--roboto-medium);
 }
 
-.temp-change button {
+.temp-change button,
+.your-search button {
   padding: 0.3rem 3rem;
   outline: none;
   background: none;
@@ -188,9 +191,27 @@ button:active,
   transform: scale(0.97);
 }
 
-img {
-  /* display: inline-block; */
-  /* height: 10rem;
-  width: 30rem;
-  padding: 2rem; */
+.data-page img {
+  display: inline-block;
+  height: 10rem;
+  width: 10rem;
+  padding: 2rem;
+}
+
+.your-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2.5rem;
+  color: var(--header-color);
+  font-family: var(--roboto-medium);
+}
+
+.your-search button {
+  font-size: 1.5rem;
+  padding: 0.8rem 3rem;
 }
